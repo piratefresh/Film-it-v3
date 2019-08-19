@@ -23,6 +23,7 @@ const links = [
 const Nav = () => (
   <StyledNav>
     <ul>
+      <Link label="Film IT" />
       {links.map(({ key, href, label, icon }) => (
         <NavLinkWrapper  key={key}>
           {icon}
