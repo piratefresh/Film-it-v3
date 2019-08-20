@@ -19,12 +19,11 @@ SearchTag.defaultProps = {
     text: "",
 };
   
-
 const Tag = styled.div`
     display:flex;
     align-items: center;
     text-align: center;
-    background: #4285f4;
+    background: #455DC7;
     border-radius: 10px;
     padding: 0.3em 0.5em;
     color: ${props => props.theme.white};

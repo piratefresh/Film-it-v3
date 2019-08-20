@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import Tag from '../tag/Tag'
 
-const CardHeaderMeta = ({username, price})=> {
+const CardHeaderMeta = ({username, text, location})=> {
     return (
         <Container>
             <span>{username}</span>
-            <Tag text={price}></Tag>
+            <span className="location">{location}</span>
+            <Tag small text={text} color="#455DC7"></Tag>
         </Container>
     )
 }
@@ -13,6 +14,9 @@ const CardHeaderMeta = ({username, price})=> {
 const Container = styled.div`
     display: flex;
     flex-direction: column;
+    .location {
+        font-size: 0.8em;
+    }
 `
 
 export default CardHeaderMeta;
