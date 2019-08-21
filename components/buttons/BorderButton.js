@@ -21,6 +21,11 @@ const Container = styled.button`
     margin-right: 1em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    cursor: pointer;
+    &:hover {
+        background: ${props => props.theme.blue};
+        color:${props => props.theme.white};
+    }
 `
 
 export default BorderButton;
